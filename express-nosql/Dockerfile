@@ -14,5 +14,8 @@ RUN npm install
 
 # Bundle app source
 COPY . .
+
+ENV NOSQL_COMP_ID=ocid1.compartment.oc1..aaaaaaaa4mlehopmvdluv2wjcdp4tnh2ypjz3nhhpahb4ss7yvxaa3be3diq
+ENV OCI_REGION=us-phoenix-1
 EXPOSE 3000
 CMD [ "node", "express_oracle_nosql.js" ]
